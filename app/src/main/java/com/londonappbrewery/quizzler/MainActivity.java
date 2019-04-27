@@ -16,6 +16,7 @@ public class MainActivity extends Activity {
     // TODO: Declare member variables here:
     Button mTrueButton;
     Button mFalseButton;
+    TextView mQuestionTextView;
 
 
     // TODO: Uncomment to create question bank
@@ -41,6 +42,10 @@ public class MainActivity extends Activity {
 
         mTrueButton = findViewById(R.id.true_button);
         mFalseButton = findViewById(R.id.false_button);
+
+        mQuestionTextView = findViewById(R.id.question_text_view);
+
+        mQuestionTextView.setText("My Text");
 
         mTrueButton.setOnClickListener(new View.OnClickListener() {
             @Override
